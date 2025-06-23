@@ -64,11 +64,13 @@ Normalized pixel values (0–1 scale)
 Applied data augmentation: rotation, flip, zoom, contrast
 
 📂 Splits:
+
 Training Set: 70%
 
 Validation Set: 15%
 
 Test Set: 15%
+
 ------------------------------------------------------------
 
 🧠 Model Architecture
