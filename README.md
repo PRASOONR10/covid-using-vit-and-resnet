@@ -25,7 +25,7 @@ This project presents a deep learning-based approach for detecting COVID-19 from
 - OpenCV (optional for image preprocessing)
 
 ------------------------------------------------------------
-
+📊 Dataset
 📁 Directory Structure
 
 covid19-detection/
@@ -39,11 +39,36 @@ covid19-detection/
 
 ------------------------------------------------------------
 
-📊 Dataset
+We used publicly available chest X-ray image datasets for training and evaluation:
 
-- Source: COVIDx / Kaggle datasets
-- Preprocessed to ensure class balance and resized to suitable input dimensions
+COVIDx Dataset (GitHub - COVID-Net) link:https://github.com/lindawangg/COVID-Net
 
+Kaggle COVID-19 Radiography Database
+(Link:https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database)
+
+🧾 Dataset Summary:
+Class	Sample Count (Approx.)
+COVID-19	3,616
+Normal	10,192
+Pneumonia	1,345
+
+(Counts may vary depending on preprocessing/filtering.)
+
+⚙️ Preprocessing Steps:
+Converted all images to grayscale or RGB format
+
+Resized images to a fixed shape (e.g., 224×224)
+
+Normalized pixel values (0–1 scale)
+
+Applied data augmentation: rotation, flip, zoom, contrast
+
+📂 Splits:
+Training Set: 70%
+
+Validation Set: 15%
+
+Test Set: 15%
 ------------------------------------------------------------
 
 🧠 Model Architecture
